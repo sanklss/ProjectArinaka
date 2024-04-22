@@ -7,7 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Добавить" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.304,2.964" Click="Button_Click"/>
         <Button Command="{Binding SearchCommand}" Content="Поиск" HorizontalAlignment="Left" Margin="135,10,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="57"/>
         <TextBox Text="{Binding SearchText, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <DataGrid IsReadOnly="True" ItemsSource="{Binding SearchResults}" AutoGenerateColumns="False" Margin="0,35,10,0" SelectionChanged="DataGrid_SelectionChanged">
@@ -39,6 +38,5 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Редактировать" HorizontalAlignment="Left" Margin="267,10,0,0" VerticalAlignment="Top" Width="98"/>
     </Grid>
 </Window>
