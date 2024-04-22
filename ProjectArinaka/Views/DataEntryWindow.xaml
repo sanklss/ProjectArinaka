@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProjectArinaka.Views.DataEntryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectArinaka.Views"
+        mc:Ignorable="d"
+        Title="DataEntryWindow" Height="450" Width="800">
+    <Grid Margin="0,0,480,0">
+        <TextBox x:Name="ФИО" HorizontalAlignment="Center" Margin="0,54,0,0" TextWrapping="Wrap" Text="ФИО"  VerticalAlignment="Top" Width="206"/>
+        <TextBox x:Name="Отдел" HorizontalAlignment="Center" Margin="0,96,0,0" TextWrapping="Wrap" Text="Отдел" VerticalAlignment="Top" Width="206"/>
+        <TextBox x:Name="Оборудование" HorizontalAlignment="Center" Margin="0,133,0,0" TextWrapping="Wrap" Text="Оборудование" VerticalAlignment="Top" Width="206"/>
+        <Button x:Name="Сохранить" Content="Сохранить" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Width="73"/>
+
+    </Grid>
+</Window>
