@@ -18,7 +18,7 @@ public partial class Ww2Context : DbContext
     public virtual DbSet<Ww2table> Ww2tables { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        => optionsBuilder.UseSqlite("DataSource=C:\\Users\\megat\\YandexDisk\\Programming\\Dev\\ProjectArinaka\\ProjectArinaka\\WW2.db");
+        => optionsBuilder.UseSqlite($"DataSource={AppDomain.CurrentDomain.BaseDirectory}WW2.db");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
